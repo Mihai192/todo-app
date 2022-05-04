@@ -1,0 +1,190 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: black;
+	color: green;
+}
+
+form {
+	width: 90%;
+	margin: auto;
+	
+}
+
+h1 {
+	text-align: center;
+	font-size: calc(1vw + 1.5rem);
+	padding: 20px;
+}
+
+
+.input-wrapper {
+	display: flex;
+	padding: 5px;
+	background-color: white;
+	flex: 1 1 150px;
+}
+
+input {
+	border: none;
+	flex: 1 1 0;
+	outline: none;
+}
+
+
+.input-wrapper button {
+	padding: 2px 6px;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.input-wrapper button:hover {
+	background-color: green;
+	color: white;
+}
+
+.form-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.select-wrapper {
+	flex: 1 1 150px;
+}
+.select-wrapper  {
+	border: none;
+	
+	
+	outline: none;
+	width: 100%;
+	color: green;
+	position: relative;
+	
+} 
+
+select {
+	width: 100%;
+	padding: 7.5px 5px;
+	appearance: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+ul {
+	width: 60%;
+	margin: auto;
+	padding-top: 10px;
+	list-style: none;
+}
+
+.background-arrow {
+	height: 100%;
+	width: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: green;
+	pointer-events: none;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, calc(-50% + 2.5px));
+	
+	width: 0;
+	height: 0;
+	border-top: 5px solid white;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+p {
+	display: flex;
+	align-items: center;
+}
+
+li {
+	background-color: white;
+	color: black;
+	padding: 10px;
+
+	min-height: 5vh;
+	display: flex;
+	
+	position: relative;
+	top: 0px;
+	margin: 10px 0px;
+
+	opacity: 1;
+	transform: rotate(0deg);
+	transition: top 1s ease-in-out,
+				transform 1s ease-in-out,
+				opacity 1s ease-in-out;
+}
+
+
+.done {
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+
+
+.remove {
+	top: 100px;
+	transform: rotate(10deg);
+	opacity: 0;
+}
+
+
+.button-check {
+	position: absolute;
+	top: 0;
+	right: 31.6px;
+	height: 100%;
+	padding: 0px 10px;
+	background-color: green;
+	border: none;
+	cursor: pointer;
+}
+
+.button-trash {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	padding: 0px 10px;
+	background-color: red;
+	border: none;
+	cursor: pointer;
+}
+
+.fa-trash {
+	color: white;
+	display: flex!important;
+	align-items: center;
+}
+
+.fa-check {
+	color: white;
+	display: flex!important;
+	align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+	ul {
+		width: 90%;
+	}
+}

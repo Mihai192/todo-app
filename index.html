@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Todo app</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<h1>Todo App</h1>
+
+		<form>
+			<div class="form-wrapper">
+				<div class="input-wrapper">
+					<input type="text" id="input" />
+					<button>+</button>
+				</div>
+
+				<div class="select-wrapper">
+					<select>
+						<option>All</option>
+						<option>Completed</option>
+						<option>Uncompleted</option>
+					</select>
+					<div class="background-arrow">
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<ul class="item-list"></ul>
+
+		<script src="script.js"></script>
+	</body>
+</html>
